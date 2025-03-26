@@ -1,0 +1,12 @@
+@mixin flexbox($direction: row, $justify: flex-start, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button() {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+}

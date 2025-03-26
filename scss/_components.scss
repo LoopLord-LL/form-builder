@@ -1,0 +1,100 @@
+form {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px 50px 0 0;
+  @include flexbox(column, center, flex-start);
+  gap: 5px;
+  width: 50%;
+  background-color: #fff;
+  padding-top: 20px;
+  h2 {
+    margin-left: 75px;
+  }
+  input,
+  select {
+    padding: 10px;
+    // max-width: 400px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .custom-input {
+    direction: ltr;
+    text-align: left;
+    padding-right: 10px;
+  }
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    @include flexbox(column, space-between, space-evenly);
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    h3 {
+      margin-left: 30px;
+    }
+    .tech-wrapper,
+    .project-wrapper {
+      @include flexbox(row, space-around, center);
+      .tech-box,
+      .project-box {
+        @include flexbox(column, center, center);
+        gap: 5px;
+        width: 70%;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px 0;
+      }
+      .remove {
+        @include button();
+      }
+    }
+    .add {
+      @include button();
+      margin-bottom: 20px;
+      margin-left: 25px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      &:hover {
+        background-color: rgb(232, 232, 232);
+      }
+    }
+  }
+  .links {
+    @include flexbox(column, space-around, center);
+    width: 80%;
+    margin: 0 auto;
+    gap: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    h3 {
+      align-self: flex-start;
+      margin-left: 60px;
+    }
+  }
+  .checkbox-container {
+    @include flexbox(row, flex-start, center);
+    margin: 10px 0 10px 50px;
+    gap: 5px;
+    width: 100%;
+    .check {
+      cursor: pointer;
+      margin: 0 !important;
+      width: auto;
+      padding: 0;
+    }
+  }
+  .submit {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: blue;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.912);
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+}

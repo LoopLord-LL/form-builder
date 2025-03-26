@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <aside>
+      <span>
+        <button>STUDENT</button>
+        <button>TEST</button>
+      </span>
+    </aside>
+    <form action="#">
+      <h2>Student Profile</h2>
+      <!-- name -->
+      <label for="name"></label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Full Name *"
+        required
+      />
+      <!-- email -->
+      <label for="email"></label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email *"
+        required
+      />
+      <!-- counrty -->
+      <select name="counrty" id="counrty">
+        <option value="0" disabled selected>Country</option>
+        <option value="1">Georgia</option>
+        <option value="2">Ukraine</option>
+        <option value="3">France</option>
+      </select>
+      <!-- phone -->
+      <label for="phone"></label>
+      <input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder="Phone *"
+        required
+      />
+      <!-- university -->
+      <label for="years"> </label>
+      <input
+        type="number"
+        id="years"
+        class="custom-input"
+        min="0"
+        placeholder="Finished university years"
+        required
+      />
+      <!-- technologies -->
+      <div class="container">
+        <h3>Primary technologies</h3>
+        <div class="tech-wrapper">
+          <div class="tech-box">
+            <input
+              type="text"
+              placeholder="Technology *"
+              required
+              class="custom-input"
+              min="0"
+            />
+            <input
+              type="number"
+              placeholder="Experience (years) *"
+              required
+              min="0"
+            />
+          </div>
+          <button class="remove" disabled>REMOVE</button>
+        </div>
+        <button class="add">ADD</button>
+      </div>
+      <!-- current position -->
+      <label for="position"></label>
+      <input
+        type="text"
+        name="position"
+        id="position"
+        placeholder="Current Position "
+        required
+      />
+      <!-- plans -->
+      <label for="plans"></label>
+      <input
+        type="text"
+        name="plans"
+        id="plans"
+        placeholder="Plans for the next year * "
+        required
+      />
+      <!-- Links -->
+      <div class="links">
+        <h3>Links</h3>
+        <!-- github -->
+        <label for="github"></label>
+        <input
+          type="text"
+          name="github"
+          id="github"
+          placeholder="GitHub"
+          required
+        />
+        <!-- linkedin -->
+        <label for="linkedin"></label>
+        <input
+          type="text"
+          name="linkedin"
+          id="linkedin"
+          placeholder="LinkedIn"
+          required
+        />
+        <!-- website -->
+        <label for="public-website"></label>
+        <input
+          type="text"
+          name="public-website"
+          id="public-website"
+          placeholder="Public Website"
+          required
+        />
+        <!-- CV -->
+        <label for="cv"></label>
+        <input type="text" name="cv" id="cv" placeholder="CV" required />
+      </div>
+      <!-- Project Links -->
+      <div class="container">
+        <h3>Links to your projects</h3>
+        <div class="project-wrapper">
+          <div class="project-box">
+            <input type="text" placeholder="Name *" required />
+            <input type="url" placeholder="Link *" required />
+          </div>
+          <button class="remove" disabled>REMOVE</button>
+        </div>
+        <button class="add">ADD</button>
+      </div>
+      <!-- chek box -->
+      <div class="checkbox-container">
+        <!-- <label for="checkbox"> </label> -->
+        <input type="checkbox"  class="check"/>
+        <p>Have a computer and internet</p>
+      </div>
+      <!-- SUBMIT -->
+      <button type="submit" class="submit">SUBMIT</button>
+    </form>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

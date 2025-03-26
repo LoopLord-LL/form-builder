@@ -1,0 +1,140 @@
+form {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  width: 50%;
+  background-color: #fff;
+  padding-top: 20px;
+}
+form h2 {
+  margin-left: 75px;
+}
+form input,
+form select {
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+form .custom-input {
+  direction: ltr;
+  text-align: left;
+  padding-right: 10px;
+}
+form .container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-evenly;
+  gap: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+form .container h3 {
+  margin-left: 30px;
+}
+form .container .tech-wrapper,
+form .container .project-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+form .container .tech-wrapper .tech-box,
+form .container .tech-wrapper .project-box,
+form .container .project-wrapper .tech-box,
+form .container .project-wrapper .project-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+form .container .tech-wrapper .remove,
+form .container .project-wrapper .remove {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+}
+form .container .add {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+form .container .add:hover {
+  background-color: rgb(232, 232, 232);
+}
+form .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+form .links h3 {
+  align-self: flex-start;
+  margin-left: 60px;
+}
+form .checkbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0 10px 50px;
+  gap: 5px;
+  width: 100%;
+}
+form .checkbox-container .check {
+  cursor: pointer;
+  margin: 0 !important;
+  width: auto;
+  padding: 0;
+}
+form .submit {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: blue;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.912);
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: rgb(223, 226, 226);
+  margin-bottom: 600px;
+}
